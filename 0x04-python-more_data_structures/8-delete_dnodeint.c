@@ -13,11 +13,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	unsigned int idx;
 	unsigned int cont = 0;
 
-
 	/* border case for empty list */
 	if (!(*head))
 		return (-1);
-
 	/* border case for delete at the beginning */
 	if (index == 0)
 	{
@@ -44,6 +42,5 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(node_to_delete);
 		return (1);
 	}
-
 	return (-1);
 }
