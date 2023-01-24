@@ -5,8 +5,7 @@ class Square:
     def __init__(self, size=0):
         """Inizialitation of variables
         Arg self identificador
-        size tamañe of square
-        """
+        size tamañe of square"""
         self.size = size
 
     def area(self):
