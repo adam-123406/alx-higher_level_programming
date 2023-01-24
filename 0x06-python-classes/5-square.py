@@ -3,8 +3,7 @@
 
 
 class Square:
-    """
-    Class that defines properties of square by: (based on 4-square.py).
+    """Class that defines properties of square by: (based on 4-square.py).
 
     Attribute
         size: size of a square (1 side).
