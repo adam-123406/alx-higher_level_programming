@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 class Square:
-    """Defines a square"""
+    """3-square.py"""
     def __init__(self, size=0):
         """Initialises the data"""
         self.size = size
@@ -21,4 +21,4 @@ class Square:
         if type(value) != int:
             raise TypeError("size must be an integer")
         if value < 0:
-            raise ValueError("size must be >= 0")
+            raise ValueError("size must be >= 0"i)
