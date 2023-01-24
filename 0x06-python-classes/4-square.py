@@ -1,23 +1,40 @@
 #!/usr/bin/python3
+"4-square.py define"
+
+
 class Square:
-    """Defines a square"""
+    """class Square
+    """
+
     def __init__(self, size=0):
-        """Initialises the data"""
+        """Inizialitation of variables
+        Arg self identificador
+        size tamañe of square
+        """
         self.size = size
-    def area(self):
-        """Returns current square area"""
-        return self.__size**2
 
-    @property
-    def size(self):
-        """Getter method"""
-        return self.__size
+        def area(self):
+            """Inizialitation of variables
+            Arg self identificador
+            """
+            return self.__size ** 2
 
-    @size.setter
-    def size(self, value):
-        """Setter method"""
-        self.__size = value
-        if type(value) != int:
-            raise TypeError("size must be an integer")
-        if value < 0:
-            raise ValueError("size must be >= 0")
+        @property
+        def size(self):
+            """Inizialitation of variables
+            Arg self identificador
+            """
+            return self.__size
+
+        @size.setter
+        def size(self, value):
+            """Inizialitation of variables
+            Arg self identificador
+            value of square
+            """
+            if not isinstance(value, int):
+                raise TypeError("size must be an integer")
+            elif value < 0:
+                raise value("size must be >= 0")
+                else:
+                self.__size = value
