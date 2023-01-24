@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 "5-square.py define"
-
-
 class Square:
     """class Square
     """
