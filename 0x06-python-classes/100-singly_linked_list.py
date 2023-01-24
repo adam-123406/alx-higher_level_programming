@@ -78,8 +78,8 @@ class SinglyLinkedList:
             print_node.append(str(temp_var.data))
             temp_var = temp_var.next_node
 
-            print_node.sort(key=int)
-            return ("\n".join(print_node))
+        print_node.sort(key=int)
+        return ("\n".join(print_node))
 
     def sorted_insert(self, value):
         """Inserts a new node at a given position.
