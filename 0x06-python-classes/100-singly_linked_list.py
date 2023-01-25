@@ -61,7 +61,6 @@ class Node:
 class SinglyLinkedList:
     """Singly linked list class
     """
-
     def __init__(self):
         """Initialize linked list"""
         self.__head = None
