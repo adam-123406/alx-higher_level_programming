@@ -3,7 +3,7 @@
 
 
 class Square:
-    """ Square class defined
+    """ Square class defined by:(based on 6-square.py)
     Attributes:
     size (int): Size of square
     position (tuple): position of space and new lines
