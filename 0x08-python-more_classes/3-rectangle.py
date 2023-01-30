@@ -84,9 +84,9 @@ class Rectangle:
         (__height * 2).
         """
         if self.__width is 0 or self.__height is 0:
-        return 0
+            return 0
         else:
-        return (self.__width * 2) + (self.__height * 2)
+            return (self.__width * 2) + (self.__height * 2)
 
     def _draw_rectangle(self):
         """Formats a string of '#' and '\n' chars to print the rectangle
@@ -101,8 +101,8 @@ class Rectangle:
         """
         str = ""
         for row in range(self.__height):
-        for col in range(self.__width):
-            str += '#'
+            for col in range(self.__width):
+                str += '#'
             if self.__width != 0 and row < (self.__height - 1):
                 str += '\n'
         return str
