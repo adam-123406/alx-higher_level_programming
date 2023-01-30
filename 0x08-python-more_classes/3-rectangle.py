@@ -99,10 +99,10 @@ class Rectangle:
         """
         str = ""
         for row in range(self.__height):
-        for col in range(self.__width):
-            str += '#'
-        if self.__width != 0 and row < (self.__height - 1):
-            str += '\n'
+            for col in range(self.__width):
+                str += '#'
+            if self.__width != 0 and row < (self.__height - 1):
+                str += '\n'
         return str
 
     def __str__(self):
