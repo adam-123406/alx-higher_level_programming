@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""8-rectangle, built for Holberton Python project 0x08 task 8.
+"""8-rectangle, built for Alx Python project 0x08 task 8.
 """
 
 
@@ -7,7 +7,7 @@ class Rectangle:
     """Class for printing or computation of dimensions of a rectangle.
     Takes in args for width and height of a rectangle, and contains methods
     for calculation of the area or perimeter. __str__, __repr__, and __del__
-    fuctionality defined below.
+    functionality defined below.
     Attributes:
         number_of_instances (int): counter incrementing for every
             instantiation, and decrementing for every instance deletion.
@@ -25,7 +25,7 @@ class Rectangle:
             height (int): vertical dimension of rectangle, defaults to 0
         """
         type(self).number_of_instances += 1
-        # attribute assigment here engages setters defined below
+        # attribute assignment here engages setters defined below
         self.width = width
         self.height = height
 
