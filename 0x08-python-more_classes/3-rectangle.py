@@ -7,9 +7,9 @@ class Rectangle:
     """Takes in args for width and height of a rectangle, and contains methods
     for calculation of the area or perimeter.
     __str__ functionality defined below.
-    Args:
-    width (int): horizontal dimension of rectangle, defaults to 0
-    height (int): vertical dimension of rectangle, defaults to 0
+     Args:
+        width (int): horizontal dimension of rectangle, defaults to 0
+        height (int): vertical dimension of rectangle, defaults to 0
     """
     def __init__(self, width=0, height=0):
         # attribute assigment here engages setters defined below
@@ -27,12 +27,12 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Args:
-        value (int): horizontal dimension of rectangle
+            value (int): horizontal dimension of rectangle
         Attributes:
-        __width (int): horizontal dimension of rectangle
+            __width (int): horizontal dimension of rectangle
         Raises:
-        TypeError: If `value` is not an int.
-        ValueError: If `value` is less than 0.
+            TypeError: If `value` is not an int.
+            ValueError: If `value` is less than 0.
         """
         if type(value) is not int:
             raise TypeError('width must be an integer')
