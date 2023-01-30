@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-
 """
 This is a module for a class Rectangle
 """
-
-
 class Rectangle:
     """Class of a Rectangle"""
-
     def __init__(self, width=0, height=0):
         """Initialize class"""
         self.width = width
