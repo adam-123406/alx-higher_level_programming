@@ -83,20 +83,20 @@ class Rectangle:
         (__height * 2).
         """
         if self.__width is 0 or self.__height is 0:
-        return 0
+            return 0
         else:
-        return (self.__width * 2) + (self.__height * 2)
+            return (self.__width * 2) + (self.__height * 2)
 
     def _draw_rectangle(self):
         """Formats a string of '#' and '\n' chars to print the rectangle
-        represented by the current instance.
+             represented by the current instance.
         Attributes:
-        __width (int): horizontal dimension of rectangle
-        __height (int): vertical dimension of rectangle
-        str (str): string to constructed for return
+            __width (int): horizontal dimension of rectangle
+            __height (int): vertical dimension of rectangle
+            str (str): string to constructed for return
         Returns:
-        str (str): string suitable for printing rectangle (final newline
-        omitted)
+            str (str): string suitable for printing rectangle (final newline
+            omitted)
         """
         str = ""
         for row in range(self.__height):
