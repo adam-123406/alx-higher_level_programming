@@ -5,7 +5,7 @@
 
 class Rectangle:
     """Rectangle that defines a rectangle by: (based on 2-rectangle.py).
-    __str__ fuctionality defined below.
+    
     Args:
     width (int): horizontal dimension of rectangle, defaults to 0
     height (int): vertical dimension of rectangle, defaults to 0
