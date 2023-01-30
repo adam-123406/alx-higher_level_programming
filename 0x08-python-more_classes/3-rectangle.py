@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """3-rectangle, built for  Python project 0x08 task 3.
 """
-
-
 class Rectangle:
     """Takes in args for width and height of a rectangle, and contains methods
     for calculation of the area or perimeter.
@@ -15,7 +13,6 @@ class Rectangle:
         # attribute assigment here engages setters defined below
         self.width = width
         self.height = height
-
     @property
     def width(self):
         """__width getter.
@@ -23,7 +20,6 @@ class Rectangle:
         __width (int): horizontal dimension of rectangle
         """
         return self.__width
-
     @width.setter
     def width(self, value):
         """Args:
@@ -39,7 +35,6 @@ class Rectangle:
         elif value < 0:
             raise ValueError('width must be >= 0')
         self.__width = value
-
     @property
     def height(self):
         """__height getter.
@@ -47,7 +42,6 @@ class Rectangle:
         __height (int): vertical dimension of rectangle
         """
         return self.__height
-
     @height.setter
     def height(self, value):
         """Args:
@@ -63,7 +57,6 @@ class Rectangle:
         if value < 0:
             raise ValueError('height must be >= 0')
         self.__height = value
-
     def area(self):
         """Returns area of a rectangle of a given `width` and `height`.
         Attributes:
@@ -73,7 +66,6 @@ class Rectangle:
         Area of rectangle: __width * __height
         """
         return self.__width * self.__height
-
     def perimeter(self):
         """Returns the perimeter of a rectangle of given `width` and `height`
         Attributes:
@@ -87,7 +79,6 @@ class Rectangle:
             return 0
         else:
             return (self.__width * 2) + (self.__height * 2)
-
     def _draw_rectangle(self):
         """Formats a string of '#' and '\n' chars to print the rectangle
         represented by the current instance.
@@ -106,7 +97,6 @@ class Rectangle:
             if self.__width != 0 and row < (self.__height - 1):
                 str += '\n'
         return str
-
     def __str__(self):
         """Allows direct printing of instances.
         Returns:
