@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 This is a module for a class Rectangle
 """
@@ -46,7 +45,6 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-<<<<<<< HEAD
         """Returns the perimeter of a rectangle of given `width` and `height`
         Attributes:
             __width (int): horizontal dimension of rectangle
@@ -60,11 +58,10 @@ class Rectangle:
         else:
         return (self.__width * 2) + (self.__height * 2)
 
-=======
         """Calculate perimeter"""
         width = self.__width
         height = self.__height
         if width == 0 or height == 0:
             return 0
-        return (width + height) * 2
->>>>>>> 921e89bcbeba56c3ce39cd0c5262ce952fdad539
+        return (width + height) * 2:
+
