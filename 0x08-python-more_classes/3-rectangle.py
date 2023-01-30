@@ -4,13 +4,15 @@
 
 
 class Rectangle:
-    """Rectangle that defines a rectangle by: (based on 2-rectangle.py).
+    """Rectangle that defines a rectangle by: (based on 2-rectangle.py)in args for width and height of a rectangle, and contains methods
+    for calculation of the area or perimeter.
+    __str__ functionality defined below.
     Args:
-    width (int): horizontal dimension of rectangle, defaults to 0
-    height (int): vertical dimension of rectangle, defaults to 0
+        width (int): horizontal dimension of rectangle, defaults to 0
+        height (int): vertical dimension of rectangle, defaults to 0
     """
     def __init__(self, width=0, height=0):
-        # attribute assigment here engages setters defined below
+        # attribute assignment here engages setters defined below
         self.width = width
         self.height = height
 
@@ -18,19 +20,19 @@ class Rectangle:
     def width(self):
         """__width getter.
         Returns:
-        __width (int): horizontal dimension of rectangle
+            __width (int): horizontal dimension of rectangle
         """
         return self.__width
 
     @width.setter
     def width(self, value):
         """Args:
-        value (int): horizontal dimension of rectangle
+            value (int): horizontal dimension of rectangle
         Attributes:
-        __width (int): horizontal dimension of rectangle
+            __width (int): horizontal dimension of rectangle
         Raises:
-        TypeError: If `value` is not an int.
-        ValueError: If `value` is less than 0.
+            TypeError: If `value` is not an int.
+            ValueError: If `value` is less than 0.
         """
         if type(value) is not int:
             raise TypeError('width must be an integer')
@@ -42,16 +44,16 @@ class Rectangle:
     def height(self):
         """__height getter.
         Returns:
-        __height (int): vertical dimension of rectangle
+            __height (int): vertical dimension of rectangle
         """
         return self.__height
 
     @height.setter
     def height(self, value):
         """Args:
-        value (int): vertical dimension of rectangle
+            value (int): vertical dimension of rectangle
         Attributes:
-        __height (int): vertical dimension of rectangle
+            __height (int): vertical dimension of rectangle
         Raises:
             TypeError: If `value` is not an int.
             ValueError: If `value` is less than 0.
@@ -65,21 +67,21 @@ class Rectangle:
     def area(self):
         """Returns area of a rectangle of a given `width` and `height`.
         Attributes:
-        __width (int): horizontal dimension of rectangle
-        __height (int): vertical dimension of rectangle
+            __width (int): horizontal dimension of rectangle
+            __height (int): vertical dimension of rectangle
         Returns:
-        Area of rectangle: __width * __height
+            Area of rectangle: __width * __height
         """
         return self.__width * self.__height
 
     def perimeter(self):
         """Returns the perimeter of a rectangle of given `width` and `height`
         Attributes:
-        __width (int): horizontal dimension of rectangle
-        __height (int): vertical dimension of rectangle
+            __width (int): horizontal dimension of rectangle
+            __height (int): vertical dimension of rectangle
         Returns:
-        0 if either attribute is 0, or the perimeter: (__width * 2) +
-        (__height * 2).
+            0 if either attribute is 0, or the perimeter: (__width * 2) +
+            (__height * 2).
         """
         if self.__width is 0 or self.__height is 0:
             return 0
@@ -88,7 +90,7 @@ class Rectangle:
 
     def _draw_rectangle(self):
         """Formats a string of '#' and '\n' chars to print the rectangle
-             represented by the current instance.
+        represented by the current instance.
         Attributes:
             __width (int): horizontal dimension of rectangle
             __height (int): vertical dimension of rectangle
@@ -108,8 +110,7 @@ class Rectangle:
     def __str__(self):
         """Allows direct printing of instances.
         Returns:
-        The output of _draw_rectangle, which creates a string
+            The output of _draw_rectangle, which creates a string
         representation of the rectangle suitable for printing.
         """
         return self._draw_rectangle()
-
