@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+
 """
 This is a module for a class Rectangle
 """
 
 
 class Rectangle:
-    """Class of that defines a rectangle by: (based on 1-rectangle.py)"""
+    """Class of a Rectangle"""
 
     def __init__(self, width=0, height=0):
         """Initialize class"""
@@ -40,28 +41,15 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = HeightValue
 
-    def area(self):
-        """Calculate area"""
-        return self.__width * self.__height
+        def area(self):
+            """Calculate area"""
+            return self.__width * self.__height
 
-    def perimeter(self):
-        """Returns the perimeter of a rectangle of given `width` and `height`
-        Attributes:
-            __width (int): horizontal dimension of rectangle
-            __height (int): vertical dimension of rectangle
-        Returns:
-            0 if either attribute is 0, or the perimeter: (__width * 2) +
-            (__height * 2).
-        """
-        if self.__width is 0 or self.__height is 0:
-        return 0
-        else:
-        return (self.__width * 2) + (self.__height * 2)
-
-        """Calculate perimeter"""
-        width = self.__width
-        height = self.__height
-        if width == 0 or height == 0:
-            return 0
-        return (width + height) * 2:
+        def perimeter(self):
+            """Calculate perimeter"""
+            width = self.__width
+            height = self.__height
+            if width == 0 or height == 0:
+                return 0
+            return (width + height) * 2
 
