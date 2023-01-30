@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """5-rectangle, built for Alx Python project 0x08 task 5.
 """
-
-
 class Rectangle:
     """Takes in args for width and height of a rectangle, and contains methods
     for calculation of the area or perimeter.
@@ -127,3 +125,4 @@ class Rectangle:
         """Prints message upon deletion of instance.
         """
         print('Bye rectangle...')
+
