@@ -2,7 +2,7 @@
 """3-rectangle, built for  Python project 0x08 task 3.
 """
 class Rectangle:
-    """Takes in args for width and height of a rectangle, and contains methods
+    """Takes in args for width and height of a rectangle, and contains
     for calculation of the area or perimeter.
     __str__ functionality defined below.
      Args:
@@ -49,8 +49,8 @@ class Rectangle:
         Attributes:
         __height (int): vertical dimension of rectangle
         Raises:
-            TypeError: If `value` is not an int.
-            ValueError: If `value` is less than 0.
+        TypeError: If `value` is not an int.
+        ValueError: If `value` is less than 0.
         """
         if type(value) is not int:
             raise TypeError('height must be an integer')
@@ -67,7 +67,7 @@ class Rectangle:
         """
         return self.__width * self.__height
     def perimeter(self):
-        """Returns the perimeter of a rectangle of given `width` and `height`
+        """Returns the perimeter of a rectangle of given `width` and
         Attributes:
         __width (int): horizontal dimension of rectangle
         __height (int): vertical dimension of rectangle
@@ -80,15 +80,14 @@ class Rectangle:
         else:
             return (self.__width * 2) + (self.__height * 2)
     def _draw_rectangle(self):
-        """Formats a string of '#' and '\n' chars to print the rectangle
+        """Formats a string of '#' and '\n' chars to print the
         represented by the current instance.
         Attributes:
         __width (int): horizontal dimension of rectangle
         __height (int): vertical dimension of rectangle
         str (str): string to constructed for return
         Returns:
-        str (str): string suitable for printing rectangle (final newline
-        omitted)
+        str (str): string suitable for printing rectangle (final omitted)
         """
         str = ""
         for row in range(self.__height):
