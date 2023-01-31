@@ -2,7 +2,7 @@
 """5-rectangle, built for Alx Python project 0x08 task 5.
 """
 class Rectangle:
-    """Takes in args for width and height of a rectangle, and contains methods
+    """Takes in args for width and height of a rectangle.
     for calculation of the area or perimeter.
     __str__, __repr__, and __del__ functionality defined below.
     Args:
