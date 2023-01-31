@@ -2,7 +2,7 @@
 """1-rectangle, built for Python project 0x08 task 1.
 """
 class Rectangle:
-    """At this stage the class only creates private instance attributes by
+    """At this stage the class only creates private instanc by
     taking in two arguments.
     Args:
     width (int): horizontal dimension of rectangle, defaults to 0
