@@ -6,8 +6,8 @@ class Rectangle:
     for calculation of the area or perimeter.
     __str__, __repr__, and __del__ functionality defined below.
     Args:
-        width (int): horizontal dimension of rectangle, defaults to 0
-        height (int): vertical dimension of rectangle, defaults to 0
+    width (int): horizontal dimension of rectangle, defaults to 0
+    height (int): vertical dimension of rectangle, defaults to 0
     """
     def __init__(self, width=0, height=0):
         # attribute assignment here engages setters defined below
@@ -125,4 +125,3 @@ class Rectangle:
         """Prints message upon deletion of instance.
         """
         print('Bye rectangle...')
-
