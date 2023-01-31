@@ -6,8 +6,8 @@ class Rectangle:
     for calculation of the area or perimeter.
     __str__ functionality defined below.
      Args:
-        width (int): horizontal dimension of rectangle, defaults to 0
-        height (int): vertical dimension of rectangle, defaults to 0
+    width (int): horizontal dimension of rectangle, defaults to 0
+    height (int): vertical dimension of rectangle, defaults to 0
     """
     def __init__(self, width=0, height=0):
         # attribute assigment here engages setters defined below
@@ -104,4 +104,3 @@ class Rectangle:
         representation of the rectangle suitable for printing.
         """
         return self._draw_rectangle()
-
