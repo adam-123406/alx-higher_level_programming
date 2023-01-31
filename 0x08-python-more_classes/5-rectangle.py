@@ -3,10 +3,9 @@
 """
 class Rectangle:
     """Takes in args for width and height of a rectangle.
-    for calculation of the area or perimeter.
     Args:
-    width (int): horizontal dimension of rectangle, defaults to 0
-    height (int): vertical dimension of rectangle, defaults to 0
+        width (int): horizontal dimension of rectangle, defaults to 0
+        height (int): vertical dimension of rectangle, defaults to 0
     """
     def __init__(self, width=0, height=0):
         # attribute assignment here engages setters defined below
