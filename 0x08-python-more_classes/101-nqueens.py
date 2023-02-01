@@ -39,7 +39,7 @@ def rec_backtrack(board, y):
         for x in range(N):
         board[y][1] = x
         if test_pos(board, y):
-        rec_backtrack(board, y + 1)
+    rec_backtrack(board, y + 1)
 
 if len(sys.argv) is not 2:
     error_exit("Usage: nqueens N")
@@ -52,5 +52,5 @@ if len(sys.argv) is not 2:
     if N < 4:
         error_exit("N must be at least 4")
 
-board = [[y, 0] for y in range(N)]
-rec_backtrack(board, 0)
+    board = [[y, 0] for y in range(N)]
+    rec_backtrack(board, 0)
