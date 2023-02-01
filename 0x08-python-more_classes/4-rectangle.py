@@ -4,7 +4,7 @@
 
 
 class Rectangle:
-    """3-rectangle.py Takes in args for width and height of a rectangle, and contains methods
+    """3-rectangle.py Takes in args for width and height of a rectangle.
     for calculation of the area or perimeter.
     __str__ and __repr__ functionality defined below.
     Args:
