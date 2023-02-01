@@ -59,3 +59,13 @@ class Rectangle:
             return ""
         return ("\n".join(["".join(["#" for i in range(self.__width)])
                 for j in range(self.__height)]))
+
+    def __repr__(self):
+        """ return a string representation of the rectangle
+        """
+        return "Rectangle({}, {})".format(self.__width, self.__height)
+
+    def __del__(self):
+        """Print the message when an instance of Rectangle is deleted
+        """
+        print("Bye rectangle...")
