@@ -31,7 +31,8 @@ Example:
 
 
     def get_solution(board):
-        """Return the list of lists representation of a solved chessboard."""
+        """Return the list of lists representation of a solved chessboard.
+        """
         solution = []
         for r in range(len(board)):
             for c in range(len(board)):
@@ -130,4 +131,4 @@ Example:
             board = init_board(int(sys.argv[1]))
             solutions = recursive_solve(board, 0, 0, [])
             for sol in solutions:
-                print(sol)
+            print(sol)
