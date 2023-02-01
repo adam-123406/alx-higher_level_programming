@@ -44,15 +44,13 @@ def rec_backtrack(board, y):
 if len(sys.argv) is not 2:
     error_exit("Usage: nqueens N")
 
-    try:
-        N = int(sys.argv[1])
-    except:
-        error_exit("N must be a number")
+try:
+    N = int(sys.argv[1])
+except:
+    error_exit("N must be a number")
 
-        if N < 4:
-            error_exit("N must be at least 4")
+if N < 4:
+    error_exit("N must be at least 4")
 
-        board = [[y, 0] for y in range(N)]
-        rec_backtrack(board, 0)
-
-
+board = [[y, 0] for y in range(N)]
+rec_backtrack(board, 0)
