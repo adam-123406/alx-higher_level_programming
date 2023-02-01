@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-"""Rectangle = __import__('1-rectangle').Rectangle
+"""Rectangle import('1-rectangle').
 """
-
 class Rectangle:
     """class rectangle"""
-
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
         Args:
@@ -27,7 +25,6 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
          self.__width = value
-
     @property
     def height(self):
         """ Get/set the height of the Rectangle.
