@@ -37,7 +37,7 @@ N non-attacking queens on an NxN chessboard.
                 if board[r][c] == "Q":
                     solution.append([r, c])
                     break
-            return (solution)
+        return (solution)
 
 
     def xout(board, row, col):
@@ -129,4 +129,4 @@ N non-attacking queens on an NxN chessboard.
             board = init_board(int(sys.argv[1]))
             solutions = recursive_solve(board, 0, 0, [])
             for sol in solutions:
-            print(sol)
+                print(sol)
