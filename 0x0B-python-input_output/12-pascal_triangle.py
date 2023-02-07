@@ -1,26 +1,15 @@
 #!/usr/bin/python3
-'''
-file: 14-pascal_triangle.py
-functions:
-    -> pascal_triangle
-'''
-
-
 def pascal_triangle(n):
-    ''' Create a list of list representing pascal triangle '''
-
-    triangle = []
-    if n == 0:
-    return triangle
-
-    triangle.append([1])
-
-    for i in range(1, n):
-    before = triangle[-1
-    after = [1]
-    for i in range(len(before) - 1):
-    after.append(before[i] + before[i + 1])
-    after += [1]
-    triangle.append(after)
-
-    return triangle
+    """ Pascal Triangle 1h"""
+    li = []
+    if n <= 0:
+        return li
+    for r in range(n):
+        for c in range(r + 1):
+            if c == 0:
+                li.append([1])
+            elif c == r:
+                li[r].append(1)
+            else:
+                li[r].append(li[r - 1][c] + li[r - 1][c - 1])
+    return li
