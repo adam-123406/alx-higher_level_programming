@@ -1,14 +1,20 @@
 #!/usr/bin/python3
-"""method for student creation"""
+'''
+file: 11-student.py
+Classes:
+    -> Student
+'''
 
 
 class Student:
-    """Student obj"""
+    ''' Student class '''
 
     def __init__(self, first_name, last_name, age):
+        ''' Constructor method '''
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self):
-        return self.__dict__
+        ''' Method that returns directory description '''
+        return self.__dict__.copy()
