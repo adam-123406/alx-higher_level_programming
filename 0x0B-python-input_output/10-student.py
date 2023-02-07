@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''
 file: 11-student.py
-Classes:
-    -> Student
+Classes
+Student
 '''
 
 
@@ -20,9 +20,9 @@ class Student:
 
         if isinstance(attrs, list) and all(isinstance(attr, str)
             for attr in attrs):
-                res = {}
-                for i in attrs:
-                    if i in self.__dict__:
-                        res[i] = self.__dict__[i]
+            res = {}
+            for i in attrs:
+                if i in self.__dict__:
+                res[i] = self.__dict__[i]
             return res
         return self.__dict__
