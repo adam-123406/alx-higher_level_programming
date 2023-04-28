@@ -1,21 +1,23 @@
 #!/usr/bin/python3
-"""Python script that takes 2 arguments in order to solve this challenge.
+"""Sends a POST request to http://0.0.0.0:5000/search_user with a given letter.
+Usage: ./8-json_api.py <letter>
+  - The letter is sent as the value of the variable `q`.
+  - If no letter is provided, sends `q=""`.
 """
 import sys
 import requests
 
 
 if __name__ == "__main__":
-    url = "https://api.github.com/repos/{}/{}/commits".format(
-        sys.argv[2], sys.argv[1])
+    letter = "" if len(sys.argv) == 1 else sys.argv[1]
+    payload = {"q": letter}
 
-    m = requests.get(url)
-    commits = m.json()
+    r = requests.post("http://0.0.0.0:5000/search_user", data=payload)
     try:
-        for i in range(10):
-            print("{}: {}".format(
-                commits[i].get("sha"),
-                commits[i].get("commit").get("author").get("name")))
-    except IndexError:
-        pass
-    
+        response = r.json()
+        if response == {}:
+            print("No result")
+        else:
+            print("[{}] {}".format(response.get("id"), response.get("name")))
+    except ValueError:
+        print("Not a valid JSON")
